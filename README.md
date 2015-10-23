@@ -23,11 +23,13 @@ Since the application is designed to work in a PaaS environment, all configurati
 
 | Key | Description
 | --- | -----------
+| `SERVICE_NAME` | the Name of the service advertised by the service broker if not sure set it to newrelic
 | `LICENSEKEY` | The New Relic account license key to provide to all applications.  This can be found on the Account Settings Summary page in New Relic.
 | `SECURITY_USER_NAME` | The username that the Cloud Foundry Cloud Controller should use to authenticate.  This can be any value.
 | `SECURITY_USER_PASSWORD` | The password that the Cloud Foundry Cloud Controller should use to authenticate.  This can be any value
 | `SERVICEBROKER_PLANID` | The id for the plan advertised by the service broker.  This **must** be a UUID.  A new UUID can be generated [here][u].
 | `SERVICEBROKER_SERVICEID` | the id of the service advertised by the service broker.  This **must** be a UUID.  A new UUID can be generated [here][u].
+
 
 ## Developing
 The project is set up as a Maven project and doesn't have any special requirements beyond that.
