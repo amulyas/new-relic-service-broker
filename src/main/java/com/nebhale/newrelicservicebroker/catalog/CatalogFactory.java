@@ -33,7 +33,7 @@ public class CatalogFactory {
         return new Catalog()
             .service()
                 .id(UUID.fromString(serviceId))
-                .name("newrelic")
+                .name("${serviceBroker.serviceName}")
                 .description("Manage and monitor your apps")
                 .bindable(true)
                 .tags("newrelic", "management", "monitoring", "apm")
